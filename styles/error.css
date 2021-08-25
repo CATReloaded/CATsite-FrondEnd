@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap");
+/**
+header style */
+body {
+  font-family: "Poppins";
+}
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  background-image: linear-gradient(270deg, rgb(99, 12, 12), rgb(0, 0, 0));
+}
+nav > * {
+  padding: 15px;
+}
+.logo > img {
+  width: 11rem;
+  height: 60px;
+}
+.nav-bar > ul {
+  font-family: "Poppins";
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50rem;
+  height: 30px;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.nav-bar > ul > li {
+  text-transform: capitalize;
+  transition: color 0.25s;
+}
+.nav-bar > ul > li:hover,
+.nav-bar > ul > li:active {
+  color: rgba(194, 52, 28, 1);
+  cursor: pointer;
+}
+.news-letter > button {
+  background-color: transparent;
+  box-shadow: none;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 6px;
+}
+.error {
+  margin-top: 142px;
+  margin-left: 224px;
+  margin-right: 196px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+}
+.error > .error-dis {
+  margin-right: 60px;
+}
+.error > .error-dis > h1 {
+  font-weight: bolder;
+  margin-top: 66px;
+  margin-bottom: 16px;
+  font-size: 68px;
+  color: #c2341c;
+}
+.error > .error-dis > p {
+  font-weight: bolder;
+  font-size: 32px;
+  padding-bottom: 24px;
+}
+.error > .error-dis > button {
+  background-color: #c2341c;
+  border-radius: 6px;
+  border: 2px solid #c2341c;
+  padding: 12px 24px;
+}
+.error > .error-dis > button > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+.error > .error-img > img {
+  width: 540px;
+}
+/*footer style*/
+footer {
+  background-color: #1c1c1c;
+  background-image: linear-gradient(270deg, rgb(99, 12, 12), rgb(0, 0, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  padding-top: 60px;
+}
+.footer1 {
+  background-color: #1c1c1c;
+  background-image: linear-gradient(270deg, rgb(99, 12, 12), rgb(0, 0, 0));
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #fff;
+  padding-top: 60px;
+}
+.footer2 {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  background-color: #c2341c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+.info > * {
+  margin-bottom: 30px;
+}
+.info-location img {
+  width: 16px;
+}
+.contact-us > * {
+  margin-right: 20px;
+}
+.news-letter {
+  display: flex;
+  flex-direction: column;
+}
+.news-letter > p {
+  margin-bottom: 38px;
+  text-align: center;
+  font-size: 32px;
+  font-family: "Raleway";
+  font-weight: 700;
+}
+.news-letter > form {
+  display: flex;
+  flex-direction: column;
+}
+.news-letter > form > * {
+  width: 288px;
+  height: 40px;
+  color: #484848;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+}
+.news-letter > form > input::placeholder {
+  color: #484848;
+}
+.news-letter > form > input[type="submit"] {
+  background-color: #c2341c;
+  border: none;
+  color: #fff;
+}
+.blog-tags > p {
+  margin-bottom: 12px;
+}
+.blog-tags > p:nth-child(1) {
+  font-size: 32px;
+  font-family: "Raleway";
+  font-weight: 700;
+
+  margin-bottom: 36px;
+}
+.annual-partner {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.annual-partner > p {
+  font-size: 32px;
+  font-family: "Raleway";
+  font-weight: 700;
+  margin-bottom: 38px;
+}
