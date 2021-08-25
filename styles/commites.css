@@ -218,7 +218,7 @@ nav > * {
   margin-right: 242px;
 }
 .active-circle {
-  transform: translateY(-54px);
+  transform: translateY(-30px);
 }
 /*
 ....................................
@@ -504,7 +504,7 @@ footer {
     /* margin-right: 196px; */
   }
   .active-circle {
-    transform: translateY(-54px);
+    transform: translateY(-24px);
   }
   .Technical-circles > h2 {
     font-size: 56px;
