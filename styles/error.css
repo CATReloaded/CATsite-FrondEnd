@@ -228,7 +228,7 @@ footer {
   text-decoration: none;
 }
 .contact-us > a > img {
-  width: 26px;
+  height: 28px;
 }
 .news-letter {
   display: flex;
@@ -388,7 +388,7 @@ footer {
     margin-right: 16px;
   }
   .contact-us > a > img {
-    width: 20px;
+    height: 22px;
   }
   .news-letter > p {
     margin-bottom: 30px;
