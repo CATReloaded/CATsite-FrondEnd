@@ -798,9 +798,6 @@ footer {
   .NL-sub > form > input[type="submit"] {
     font-size: 24px;
   }
-  header {
-    height: 1080px;
-  }
   nav > * {
     padding: 18px;
   }
