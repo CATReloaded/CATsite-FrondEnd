@@ -762,3 +762,229 @@ footer {
     margin-bottom: 26px;
   }
 }
+@media only screen and (min-width: 1700px) {
+  .lay1 > .exit {
+    width: 34px;
+    height: 34px;
+    right: 48px;
+    top: 48px;
+  }
+  .lay1 > .exit > img {
+    width: 22px;
+    height: 22px;
+  }
+  .lay2 {
+    width: 1260px;
+    margin-top: 106px;
+  }
+  .lay2 > .NL-img > img {
+    width: 430px;
+  }
+  .lay2 > .NL-sub {
+    margin-left: -10px;
+  }
+  .lay2 > .NL-sub > h4 {
+    font-size: 60px;
+  }
+  .lay2 > .NL-sub > p {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+  .NL-sub > form > * {
+    width: 540px;
+    height: 60px;
+  }
+  .NL-sub > form > input::placeholder,
+  .NL-sub > form > input[type="submit"] {
+    font-size: 24px;
+  }
+  header {
+    height: 1080px;
+  }
+  nav > * {
+    padding: 18px;
+  }
+  .logo > img {
+    width: 176px;
+    height: 60px;
+  }
+  .nav-bar > ul {
+    width: 800px;
+    height: 30px;
+    font-size: 20px;
+  }
+  .news-letter > button {
+    padding: 10px;
+  }
+  .aboutCat {
+    margin-top: 136px;
+    margin-bottom: 112px;
+  }
+  .aboutCat > img {
+    width: 206px;
+  }
+  .aboutCat > h1 {
+    font-size: 84px;
+  }
+  .our-history {
+    padding-top: 90px;
+  }
+  .history {
+    padding: 0 0 0 130px;
+  }
+  h2 {
+    font-size: 60px !important;
+  }
+  h2::after {
+    bottom: -20px !important;
+  }
+  .history > h2 {
+    margin-bottom: 40px;
+  }
+  .history > h2::after {
+    width: 252px;
+  }
+  .history > p {
+    width: 1140px;
+    font-size: 32px;
+    margin-bottom: 135px;
+  }
+  .our-history > img {
+    height: 396px;
+    margin-left: 225px;
+  }
+  .ourMV {
+    padding-top: 105px;
+  }
+  .MV {
+    padding-left: 234px;
+  }
+  .MV > h2 {
+    margin-bottom: 36px;
+  }
+  .MV > h2::after {
+    width: 252px;
+  }
+  .MV > p {
+    font-size: 32px;
+    padding-right: 194px;
+    margin-bottom: 96px;
+  }
+  .ourMV > img {
+    padding: left 240px;
+    height: 380px;
+  }
+  .hierarchy {
+    padding: top 90px;
+  }
+  .hierarchy > h2 {
+    margin-bottom: 86px;
+  }
+  .hierarchy > h2::after {
+    left: 90px;
+    width: 225px;
+  }
+  .founders {
+    margin: 0 366px 212px 366px;
+  }
+  .founder {
+    margin-top: 70px;
+  }
+  .founder > .name {
+    font-size: 48px;
+  }
+  .founder > .position {
+    font-size: 32px;
+  }
+  .fig-img > img {
+    width: 296px;
+    height: 267px;
+  }
+  .fig-contacts {
+    bottom: -55px;
+  }
+  .founder:hover .fig-contacts {
+    bottom: 12px;
+  }
+  .board {
+    padding: top 84px;
+  }
+  .board > h2 {
+    margin-bottom: 116px;
+  }
+  .board > h2::after {
+    left: 70px;
+    width: 225px;
+  }
+  .cor-vice {
+    width: 1010px;
+  }
+  .b-member {
+    margin-bottom: 130px;
+  }
+  .b-member {
+    width: 366px;
+  }
+  .b-member > .name {
+    font-size: 40px;
+  }
+  .b-member > .position {
+    font-size: 32px;
+  }
+  .b-member:hover .fig-contacts {
+    bottom: 12px;
+  }
+  .leaders {
+    margin-left: 144px;
+    margin-right: 144px;
+  }
+  footer {
+    padding-top: 60px;
+  }
+  .footer1 {
+    margin-left: 168px;
+    margin-right: 180px;
+  }
+  .footer2 {
+    height: 60px;
+  }
+  .footer2 > p {
+    font-size: 24px;
+  }
+  .info > * {
+    margin-bottom: 30px;
+  }
+  .info > img {
+    width: 300px;
+  }
+  .info-location img {
+    width: 16.5px;
+  }
+  .contact-us > * {
+    margin-right: 24px;
+  }
+  .contact-us > a > img {
+    height: 36px;
+  }
+  .news-letter > p {
+    margin-bottom: 38px;
+    font-size: 32px;
+  }
+  .news-letter > form > * {
+    width: 288px;
+    height: 40px;
+    padding: 8.5px 0 8.5px 16px;
+    margin-bottom: 16px;
+  }
+  .blog-tags > p {
+    font-size: 24px;
+  }
+  .blog-tags > p:nth-child(1) {
+    font-size: 32px;
+    margin-bottom: 38px;
+  }
+  .annual-partner > p {
+    font-size: 32px;
+    margin-bottom: 38px;
+  }
+}

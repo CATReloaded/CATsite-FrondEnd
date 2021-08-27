@@ -412,3 +412,130 @@ footer {
     margin-bottom: 26px;
   }
 }
+
+@media only screen and (min-width: 1700px) {
+  .lay1 > .exit {
+    width: 34px;
+    height: 34px;
+    right: 48px;
+    top: 48px;
+  }
+  .lay1 > .exit > img {
+    width: 22px;
+    height: 22px;
+  }
+  .lay2 {
+    width: 1260px;
+    margin-top: 106px;
+  }
+  .lay2 > .NL-img > img {
+    width: 430px;
+  }
+  .lay2 > .NL-sub {
+    margin-left: -10px;
+  }
+  .lay2 > .NL-sub > h4 {
+    font-size: 60px;
+  }
+  .lay2 > .NL-sub > p {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+  .NL-sub > form > * {
+    width: 540px;
+    height: 60px;
+  }
+  .NL-sub > form > input::placeholder,
+  .NL-sub > form > input[type="submit"] {
+    font-size: 24px;
+  }
+
+  nav > * {
+    padding: 18px;
+  }
+  .logo > img {
+    width: 176px;
+    height: 60px;
+  }
+  .nav-bar > ul {
+    width: 800px;
+    height: 30px;
+    font-size: 20px;
+  }
+  .news-letter > button {
+    padding: 10px;
+  }
+  .error {
+    margin: 172px 235px 45px 275px;
+  }
+  .error > .error-dis {
+    margin-right: 72px;
+  }
+  .error > .error-dis > h1 {
+    margin-top: 72px;
+    margin-bottom: 20px;
+    font-size: 84px;
+  }
+  .error > .error-dis > p {
+    font-size: 40px;
+    padding-bottom: 30px;
+  }
+  .error > .error-dis > button {
+    padding: 15px 30px;
+  }
+  .error > .error-dis > button > a {
+    font-size: 24px;
+  }
+  .error > .error-img > img {
+    width: 650px;
+  }
+  footer {
+    padding-top: 60px;
+  }
+  .footer1 {
+    margin-left: 168px;
+    margin-right: 180px;
+  }
+  .footer2 {
+    height: 60px;
+  }
+  .footer2 > p {
+    font-size: 24px;
+  }
+  .info > * {
+    margin-bottom: 30px;
+  }
+  .info > img {
+    width: 300px;
+  }
+  .info-location img {
+    width: 16.5px;
+  }
+  .contact-us > * {
+    margin-right: 24px;
+  }
+  .contact-us > a > img {
+    height: 36px;
+  }
+  .news-letter > p {
+    margin-bottom: 38px;
+    font-size: 32px;
+  }
+  .news-letter > form > * {
+    width: 288px;
+    height: 40px;
+    padding: 8.5px 0 8.5px 16px;
+    margin-bottom: 16px;
+  }
+  .blog-tags > p {
+    font-size: 24px;
+  }
+  .blog-tags > p:nth-child(1) {
+    font-size: 32px;
+    margin-bottom: 38px;
+  }
+  .annual-partner > p {
+    font-size: 32px;
+    margin-bottom: 38px;
+  }
+}

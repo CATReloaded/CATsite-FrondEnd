@@ -571,3 +571,167 @@ footer {
     margin-bottom: 26px;
   }
 }
+@media only screen and (min-width: 1700px) {
+  .lay1 > .exit {
+    width: 34px;
+    height: 34px;
+    right: 48px;
+    top: 48px;
+  }
+  .lay1 > .exit > img {
+    width: 22px;
+    height: 22px;
+  }
+  .lay2 {
+    width: 1260px;
+    margin-top: 106px;
+  }
+  .lay2 > .NL-img > img {
+    width: 430px;
+  }
+  .lay2 > .NL-sub {
+    margin-left: -10px;
+  }
+  .lay2 > .NL-sub > h4 {
+    font-size: 60px;
+  }
+  .lay2 > .NL-sub > p {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+  .NL-sub > form > * {
+    width: 540px;
+    height: 60px;
+  }
+  .NL-sub > form > input::placeholder,
+  .NL-sub > form > input[type="submit"] {
+    font-size: 24px;
+  }
+  header {
+    height: 1080px;
+  }
+  nav > * {
+    padding: 18px;
+  }
+  .logo > img {
+    width: 176px;
+    height: 60px;
+  }
+  .nav-bar > ul {
+    width: 800px;
+    height: 30px;
+    font-size: 20px;
+  }
+  .news-letter > button {
+    padding: 10px;
+  }
+  .aboutCat {
+    margin-top: 136px;
+    margin-bottom: 112px;
+  }
+  .aboutCat > img {
+    width: 206px;
+  }
+  .aboutCat > h1 {
+    font-size: 84px;
+  }
+  .non-techincal {
+    margin-bottom: 90px;
+  }
+  .cards {
+    margin-bottom: 96px;
+  }
+  .card {
+    width: 390px;
+    height: 393px;
+  }
+  .card::before {
+    width: 280px;
+  }
+  .non-techincal .card + .card {
+    margin-left: 30px;
+  }
+  .card > span:nth-child(1) {
+    font-size: 40px;
+  }
+  .circle-disecription {
+    margin-left: 142px;
+  }
+  .card > span:nth-child(2) > img {
+    width: 280px;
+  }
+  .circle-disecription > h3 {
+    font-size: 60px;
+  }
+  .circle-disecription > p {
+    font-size: 40px;
+    /* margin-right: 196px; */
+  }
+  .active-circle {
+    transform: translateY(-36px);
+  }
+  .Technical-circles > h2 {
+    font-size: 84px;
+    margin-bottom: 170px;
+    margin-top: 74px;
+  }
+  .tech {
+    width: 1686px;
+  }
+  .tech > .card {
+    margin-right: 30px;
+    margin-bottom: 80px;
+  }
+  .tech > .circle-disecription {
+    margin-bottom: 140px;
+  }
+  footer {
+    padding-top: 60px;
+  }
+  .footer1 {
+    margin-left: 168px;
+    margin-right: 180px;
+  }
+  .footer2 {
+    height: 60px;
+  }
+  .footer2 > p {
+    font-size: 24px;
+  }
+  .info > * {
+    margin-bottom: 30px;
+  }
+  .info > img {
+    width: 300px;
+  }
+  .info-location img {
+    width: 16.5px;
+  }
+  .contact-us > * {
+    margin-right: 24px;
+  }
+  .contact-us > a > img {
+    height: 36px;
+  }
+  .news-letter > p {
+    margin-bottom: 38px;
+    font-size: 32px;
+  }
+  .news-letter > form > * {
+    width: 288px;
+    height: 40px;
+    padding: 8.5px 0 8.5px 16px;
+    margin-bottom: 16px;
+  }
+  .blog-tags > p {
+    font-size: 24px;
+  }
+  .blog-tags > p:nth-child(1) {
+    font-size: 32px;
+    margin-bottom: 38px;
+  }
+  .annual-partner > p {
+    font-size: 32px;
+    margin-bottom: 38px;
+  }
+}

@@ -374,7 +374,7 @@ nav > * {
   position: absolute;
   top: 16px;
   left: 12px;
-  padding: 10px;
+  padding: 10px 25px;
   font-size: 20px;
   background-image: linear-gradient(
     270deg,
@@ -901,7 +901,7 @@ footer {
   .blog > .circle {
     top: 13px;
     left: 10px;
-    padding: 8px;
+    padding: 8px 20px;
     font-size: 16px;
     border-radius: 64px;
   }
@@ -964,6 +964,7 @@ footer {
   }
   .event > .event-description > h3 {
     font-size: 32px;
+    margin-top: 16px;
   }
   .event > .event-description > .add-data {
     font-size: 16px;
@@ -1056,5 +1057,321 @@ footer {
   .annual-partner > p {
     font-size: 22px;
     margin-bottom: 26px;
+  }
+}
+@media only screen and (min-width: 1700px) {
+  .lay1 > .exit {
+    width: 34px;
+    height: 34px;
+    right: 48px;
+    top: 48px;
+  }
+  .lay1 > .exit > img {
+    width: 22px;
+    height: 22px;
+  }
+  .lay2 {
+    width: 1260px;
+    margin-top: 106px;
+  }
+  .lay2 > .NL-img > img {
+    width: 430px;
+  }
+  .lay2 > .NL-sub {
+    margin-left: -10px;
+  }
+  .lay2 > .NL-sub > h4 {
+    font-size: 60px;
+  }
+  .lay2 > .NL-sub > p {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+  .NL-sub > form > * {
+    width: 540px;
+    height: 60px;
+  }
+  .NL-sub > form > input::placeholder,
+  .NL-sub > form > input[type="submit"] {
+    font-size: 24px;
+  }
+  header {
+    height: 1080px;
+  }
+  nav > * {
+    padding: 18px;
+  }
+  .logo > img {
+    width: 176px;
+    height: 60px;
+  }
+  .nav-bar > ul {
+    width: 800px;
+    height: 30px;
+    font-size: 20px;
+  }
+  .news-letter > button {
+    padding: 10px;
+  }
+  .logo-header > img {
+    margin: 226px 25%;
+    height: 376px;
+  }
+  .about {
+    padding-top: 96px;
+    padding-right: 216px;
+    padding-left: 130px;
+  }
+  .about-us {
+    flex-basis: 1020px;
+    margin-right: 182px;
+  }
+  h2 {
+    font-size: 60px !important;
+  }
+  h2::after {
+    bottom: -20px !important;
+  }
+  .about-us > h2 {
+    margin-bottom: 40px;
+  }
+
+  .about-us > h2::after {
+    width: 574px;
+  }
+  .about-us > p {
+    font-size: 32px;
+  }
+  .about-us > button {
+    width: 200px;
+    height: 64px;
+    font-size: 24px;
+    margin-top: 28px;
+    margin-bottom: 86px;
+  }
+  .cat-chars > img {
+    width: 372px;
+  }
+  .achievement > h2 {
+    margin-bottom: 148px;
+    margin-top: 86px;
+  }
+  .achievement > h2::after {
+    left: 72px;
+    width: 376px;
+  }
+  .ach-nums {
+    margin-bottom: 148px;
+  }
+  .card {
+    width: 386px;
+    height: 391px;
+    padding-left: 86px;
+  }
+  .card::before {
+    width: 280px;
+  }
+  .card + .card {
+    margin-left: 30px;
+  }
+  .card > span:nth-child(1) > img {
+    width: 100%;
+  }
+  .card > span:nth-child(2) {
+    font-size: 80px;
+  }
+  .card > span:nth-child(3) {
+    font-size: 24px;
+  }
+  .card1 {
+    margin-top: 84px;
+  }
+  .card3 {
+    margin-top: 30px;
+  }
+  .card4 {
+    margin-top: 96px;
+  }
+  .last-blogs {
+    padding-top: 86px;
+  }
+  .last-blogs > h2 {
+    margin-bottom: 80px;
+  }
+  .last-blogs > h2::after {
+    left: 72px;
+    width: 240px;
+  }
+  .slider-parent {
+    width: 1740px;
+  }
+  .blog {
+    flex-basis: 510px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 76px;
+  }
+  .blog > * {
+    margin-left: 45px;
+  }
+  .blog > .circle {
+    top: 20px;
+    left: 15px;
+    padding: 12px 30px;
+    font-size: 24px;
+    border-radius: 64px;
+  }
+  .blog > img {
+    height: 430px;
+  }
+  .blog > h3 {
+    margin-top: 45px;
+    font-size: 40px;
+  }
+  .blog > .date {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .blog > p {
+    margin-bottom: 72px;
+    font-size: 24px;
+  }
+  .blog > p::after {
+    width: 427px;
+    bottom: -52px;
+  }
+  .blog > button {
+    margin-bottom: 32px;
+    font-size: 20px;
+    padding: 16px;
+  }
+  .indicators-blog {
+    padding-bottom: 72px;
+  }
+  .indicator-blog {
+    width: 12px;
+    height: 12px;
+  }
+  .events > h2 {
+    margin-bottom: 76px;
+    margin-top: 105px;
+  }
+  .events > h2::after {
+    left: 48px;
+    width: 220px;
+  }
+  .events-slider-parent {
+    width: 1515px;
+  }
+  .event {
+    margin-bottom: 30px;
+    width: 1515px;
+  }
+  .event > .event-img {
+    margin: 18px 0 18px 16px;
+  }
+  .event > .event-img > img {
+    width: 362px;
+    height: 390px;
+  }
+  .event > .event-description {
+    margin-left: 45px;
+    margin-right: 105px;
+  }
+  .event > .event-description > h3 {
+    font-size: 48px;
+    margin-top: 24px;
+  }
+  .event > .event-description > .add-data {
+    font-size: 24px;
+  }
+  .event-date {
+    margin-top: 12px;
+  }
+  .event-date > img,
+  .event-location > img {
+    width: 24px;
+    height: 24px;
+  }
+  .description {
+    font-size: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .event-description > button {
+    font-size: 24px;
+    margin-bottom: 24px;
+    padding: 16px 24px;
+  }
+  .indicators-events {
+    margin-bottom: 120px;
+  }
+  .indicator-event {
+    width: 12px;
+    height: 12px;
+  }
+  .sponsors {
+    padding-bottom: 156px;
+  }
+  .sponsors > h2 {
+    margin-top: 68px;
+    margin-bottom: 68px;
+  }
+  .sponsors > h2::after {
+    width: 220px;
+  }
+  .sponsors-imgs > img {
+    width: 390px;
+    margin-left: 28px;
+    margin-top: 80px;
+  }
+  footer {
+    padding-top: 60px;
+  }
+  .footer1 {
+    margin-left: 168px;
+    margin-right: 180px;
+  }
+  .footer2 {
+    height: 60px;
+  }
+  .footer2 > p {
+    font-size: 24px;
+  }
+  .info > * {
+    margin-bottom: 30px;
+  }
+  .info > img {
+    width: 300px;
+  }
+  .info-location img {
+    width: 16.5px;
+  }
+  .contact-us > * {
+    margin-right: 24px;
+  }
+  .contact-us > a > img {
+    height: 36px;
+  }
+  .news-letter > p {
+    margin-bottom: 38px;
+    font-size: 32px;
+  }
+  .news-letter > form > * {
+    width: 288px;
+    height: 40px;
+    padding: 8.5px 0 8.5px 16px;
+    margin-bottom: 16px;
+  }
+  .blog-tags > p {
+    font-size: 24px;
+  }
+  .blog-tags > p:nth-child(1) {
+    font-size: 32px;
+    margin-bottom: 38px;
+  }
+  .annual-partner > p {
+    font-size: 32px;
+    margin-bottom: 38px;
   }
 }
