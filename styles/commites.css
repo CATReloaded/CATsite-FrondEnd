@@ -731,4 +731,10 @@ footer {
     font-size: 32px;
     margin-bottom: 38px;
   }
+  .news-letter > form > input::placeholder {
+    font-size: 16px;
+  }
+  .news-letter > form > input[type="submit"] {
+    font-size: 16px;
+  }
 }
