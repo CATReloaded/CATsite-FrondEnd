@@ -1,410 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="styles/aboutStyle.css">
+    <link rel="stylesheet" href="styles/aboutStyle.css" />
     <title>About CAT</title>
-</head>
-<body>
-    <header>
-        <div class="lay1">
-            <button class="exit"><img src="imgs/exit.svg" alt=""></button>
-            <div class="lay2">
-                <div class="NL-img">
-                    <img src="imgs/newletter.svg" alt="">
-                </div>
-                <div class="NL-sub">
-                    <h4>Subscribe to our Newsletter!</h4>
-                    <p>We'll informed you with our new blogs and the latest updates!</p>
-                    <form>
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
-                        <input type="submit" value="Subscribe">
-                    </form>
-                </div>
-            </div>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <img src="imgs/logo-nav.svg" alt="" />
         </div>
-        <nav>
-            <div class="logo">
-                <img src="imgs/logo-nav.svg" alt="">
+        <div class="nav-bar">
+          <ul>
+            <li class="activee"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="https://blog.catreloaded.org/">CATazin</a></li>
+            <li><a href="comiitees.html">Committees</a></li>
+            <li><a href="#">Contcat Us</a></li>
+          </ul>
+        </div>
+        <div class="btns">
+          <div class="news-letter">
+            <button class="btn-newsletter">Newsletter</button>
+          </div>
+          <!-- registration btn -- to hide it just comment this div -->
+          <div class="register">
+            <button class="btn-register">Register</button>
+            <div class="bg-modal">
+              <div class="modal 1">
+                <img src="./imgs/logo header.svg" />
+                <div class="text">
+                  <h2>Recruitment 20<span>/</span>21</h2>
+                  <p>
+                    - This application is for those who are interested in
+                    computer science and want to take the chance to join CAT
+                    community and be part of our family.
+                  </p>
+                  <p>
+                    - Please take your time and fill this application carefully.
+                  </p>
+                  <p>
+                    - You can use any language you prefer(Arabic is allowed).
+                  </p>
+                  <p>
+                    - Note that the opening period of the form is 3 days, from
+                    19/12/2021 to 21/12/2021.
+                  </p>
+                  <p>Good Luck.</p>
+                </div>
+                <form class="register-form">
+                  <input type="text" placeholder="Full Name (In English)*" />
+                  <input type="email" placeholder="Email*" />
+                  <input type="text" placeholder="Phone Number*" />
+                  <input type="text" placeholder="Facebook Link*" />
+                  <input type="text" placeholder="LinkedIn Link*" />
+                  <select>
+                    <option selected disabled>Faculty</option>
+                    <option>Engineering</option>
+                    <option>Computer Science</option>
+                    <option>Other</option>
+                  </select>
+                  <select>
+                    <option selected disabled>University</option>
+                    <option>Mansoura</option>
+                    <option>Other</option>
+                  </select>
+                  <select>
+                    <option selected disabled>Academic Year</option>
+                    <option>Prepatory</option>
+                    <option>First</option>
+                    <option>Second</option>
+                    <option>Third</option>
+                    <option>Fourth</option>
+                  </select>
+                  <div class="form-btn">
+                    <button class="nxt-btn">Next</button>
+                  </div>
+                </form>
+                <span class="close-btn">X</span>
+              </div>
+              <div class="modal hide 2">
+                <img src="./imgs/logo header.svg" />
+                <form class="register-form">
+                  <p>Did you join any student activity before?</p>
+                  <textarea></textarea>
+                  <select>
+                    <option disabled selected>
+                      How did you know about CAT?
+                    </option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                  <p>Why do you want to join our community?</p>
+                  <textarea></textarea>
+                  <select>
+                    <option disabled selected>Choose a technical circle</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                  <p>Why did you choose this technical circle?</p>
+                  <textarea></textarea>
+                  <p>Add your experience in the track you chose</p>
+                  <textarea></textarea>
+                  <p>What are your other technical skills?</p>
+                  <textarea></textarea>
+                  <select>
+                    <option disabled selected>
+                      Choose a non-technical circle
+                    </option>
+                    <option value="hr">HR</option>
+                    <option value="pr">PR</option>
+                    <option value="logistics">Logistics</option>
+                    <option value="media">Media</option>
+                  </select>
+                  <div class="form-btn">
+                    <button class="nxt-btn">Next</button>
+                  </div>
+                </form>
+                <span class="close-btn">X</span>
+              </div>
+              <div class="modal hide three">
+                <img src="./imgs/logo header.svg" />
+                <h2>Content Creation</h2>
+                <form class="register-form">
+                  <p>What is the content creation?</p>
+                  <textarea></textarea>
+                  <p>Why did you choose content creation?</p>
+                  <textarea></textarea>
+                  <p>
+                    CAT Reloaded has a new partnership with @Xcompany, Xcompany
+                    is a tech company that seeks to offer internships to
+                    undergraduate students in most CS fields, write a little
+                    post about it.
+                  </p>
+                  <textarea></textarea>
+                  <div class="form-btn">
+                    <button class="submit-btn">Submit</button>
+                  </div>
+                </form>
+                <span class="close-btn">X</span>
+              </div>
             </div>
-            <div class="nav-bar">
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">blogs</a></li>
-                    <li><a href="comiitees.html">comittes</a></li>
-                    <li><a href="#">contcat us</a></li>
-                </ul>
-            </div>
-            <div class="news-letter">
-                <button class="btn-newsletter">
-                    Newsletter
-                </button>
-            </div>
-        </nav>
-        <section class="aboutCat">
-            <img src="imgs/layer1.svg" alt="">
-            <h1>About <span>CAT</span></h1>
-        </section>
+          </div>
+        </div>
+      </div>
+    
+    </nav>
+    <header>
+      <div class="lay1">
+        <button class="exit"><img src="imgs/exit.svg" alt="" /></button>
+        <div class="lay2">
+          <div class="NL-img">
+            <img src="imgs/newletter.svg" alt="" />
+          </div>
+          <div class="NL-sub">
+            <h4>Subscribe to our Newsletter!</h4>
+            <p>We'll informed you with our new blogs and the latest updates!</p>
+            <form>
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+              <input type="submit" value="Subscribe" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <section class="aboutCat">
+        <img src="imgs/layer1.svg" alt="" />
+        <h1>About <span>CAT</span></h1>
+      </section>
     </header>
     <section class="our-history">
+      <div class="container">
         <div class="history">
-            <h2>Our History</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut nim ad minim veniam, quiepakis nostrud exercitation ullamco laboris nsi ut aliquip ex ea comepmodo
-                consetquat. Duis aute irure dolor in reprehenderit in voluptate velit esse cfgillum dolore eutpe </p>
+          <h2>Our History</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut nim ad
+            minim veniam, quiepakis nostrud exercitation ullamco laboris nsi ut
+            aliquip ex ea comepmodo consetquat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cfgillum dolore eutpe
+          </p>
         </div>
-        <img src="imgs/person cat.svg" alt="">
+        <img src="imgs/maleCAT.svg" alt="" />
+      </div>
     </section>
     <section class="ourMV">
-        <img src="imgs/person cat.svg" alt="">
+     <div class="container">
+        <img src="imgs/femaleCAT.svg" alt="" />
         <div class="MV">
-            <h2>Our Mission & Vision</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna
-                aliqua. Ut nim ad minim veniam, quiepakis nostrud exercitation ullamco laboris nsi ut aliquip ex ea
-                comepmodo
-                consetquat. Duis aute irure dolor in reprehenderit in voluptate velit esse cfgillum dolore eutpe</p>
+          <h2>Our Mission & Vision</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut nim ad
+            minim veniam, quiepakis nostrud exercitation ullamco laboris nsi ut
+            aliquip ex ea comepmodo consetquat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cfgillum dolore eutpe
+          </p>
         </div>
-        
+     </div>
     </section>
     <section class="hierarchy">
+      <div class="container">
         <h2>Our Hierarchy</h2>
         <section class="founders">
-            <div class="founder">
-                <div class="fig-img">
-                    <img src="imgs/triago.png" alt="">
-                    <div class="abs-border"></div>
-                    <div class="fig-contacts">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <h4 class="name">Eng. Hisham Elsawy</h4>
-                <p class="position">CAT Founder</p>
+          <div class="founder">
+            <div class="fig-img">
+              <img src="imgs/triago.png" alt="" />
+              <div class="abs-border"></div>
+              <div class="fig-contacts">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
             </div>
-            <div class="founder">
-    <div class="fig-img">
-        <img src="imgs/triago.png" alt="">
-        <div class="abs-border"></div>
-        <div class="fig-contacts">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-    </div>
-    <h4 class="name">Eng. Hisham Elsawy</h4>
-    <p class="position">CAT Founder</p>
+            <h4 class="name">Eng. Hisham Elsawy</h4>
+            <p class="position">CAT Founder</p>
+          </div>
+          <div class="founder">
+            <div class="fig-img">
+              <img src="imgs/triago.png" alt="" />
+              <div class="abs-border"></div>
+              <div class="fig-contacts">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
             </div>
-            <div class="founder">
-    <div class="fig-img">
-        <img src="imgs/triago.png" alt="">
-        <div class="abs-border"></div>
-        <div class="fig-contacts">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-    </div>
-    <h4 class="name">Eng. Hisham Elsawy</h4>
-    <p class="position">CAT Founder</p>
+            <h4 class="name">Eng. Hisham Elsawy</h4>
+            <p class="position">CAT Founder</p>
+          </div>
+          <div class="founder">
+            <div class="fig-img">
+              <img src="imgs/triago.png" alt="" />
+              <div class="abs-border"></div>
+              <div class="fig-contacts">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
             </div>
-            <div class="founder">
-    <div class="fig-img">
-        <img src="imgs/triago.png" alt="">
-        <div class="abs-border"></div>
-        <div class="fig-contacts">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-    </div>
-    <h4 class="name">Eng. Hisham Elsawy</h4>
-    <p class="position">CAT Founder</p>
+            <h4 class="name">Eng. Hisham Elsawy</h4>
+            <p class="position">CAT Founder</p>
+          </div>
+          <div class="founder">
+            <div class="fig-img">
+              <img src="imgs/triago.png" alt="" />
+              <div class="abs-border"></div>
+              <div class="fig-contacts">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
             </div>
-
+            <h4 class="name">Eng. Hisham Elsawy</h4>
+            <p class="position">CAT Founder</p>
+          </div>
         </section>
+      </div>
     </section>
     <section class="board">
+      <div class="container">
         <h2>Team Board</h2>
         <section class="cor-vice">
-            <div class="b-member">
+          <div class="b-member">
             <div class="fig-img">
-                <img src="imgs/triago.png" alt="">
-                <div class="abs-border"></div>
-                <div class="fig-contacts">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+              <img src="imgs/triago.png" alt="" />
+              <div class="abs-border"></div>
+              <div class="fig-contacts">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
             </div>
             <h4 class="name">Maghfera Shrief</h4>
             <p class="position">CAT Founder</p>
+          </div>
+          <div class="b-member">
+            <div class="fig-img">
+              <img src="imgs/triago.png" alt="" />
+              <div class="abs-border"></div>
+              <div class="fig-contacts">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
             </div>
-            <div class="b-member">
-                <div class="fig-img">
-                    <img src="imgs/triago.png" alt="">
-                    <div class="abs-border"></div>
-                    <div class="fig-contacts">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <h4 class="name">Hossam Ibrahim</h4>
-                <p class="position">CAT Founder</p>
-            </div>
+            <h4 class="name">Hossam Ibrahim</h4>
+            <p class="position">CAT Founder</p>
+          </div>
         </section>
         <section class="leaders">
-            <div class="b-member">
-                <div class="fig-img">
-                    <img src="imgs/triago.png" alt="">
-                    <div class="abs-border"></div>
-                    <div class="fig-contacts">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <h4 class="name">Rawan Adel</h4>
-                <p class="position">CAT Founder</p>
+          <div class="b-member">
+            <div class="fig-img">
+              <img src="imgs/triago.png" alt="" />
+              <div class="abs-border"></div>
+              <div class="fig-contacts">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
             </div>
-            <div class="b-member">
-                <div class="fig-img">
-                    <img src="imgs/triago.png" alt="">
-                    <div class="abs-border"></div>
-                    <div class="fig-contacts">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <h4 class="name">Mohammed Badr</h4>
-                <p class="position">CAT Founder</p>
+            <h4 class="name">Rawan Adel</h4>
+            <p class="position">CAT Founder</p>
+          </div>
+          <div class="b-member">
+            <div class="fig-img">
+              <img src="imgs/triago.png" alt="" />
+              <div class="abs-border"></div>
+              <div class="fig-contacts">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
             </div>
-            <div class="b-member">
-                <div class="fig-img">
-                    <img src="imgs/triago.png" alt="">
-                    <div class="abs-border"></div>
-                    <div class="fig-contacts">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <h4 class="name">Mariam Essa</h4>
-                <p class="position">CAT Founder</p>
+            <h4 class="name">Mohammed Badr</h4>
+            <p class="position">CAT Founder</p>
+          </div>
+          <div class="b-member">
+            <div class="fig-img">
+              <img src="imgs/triago.png" alt="" />
+              <div class="abs-border"></div>
+              <div class="fig-contacts">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
             </div>
-            <div class="b-member">
-                <div class="fig-img">
-                    <img src="imgs/triago.png" alt="">
-                    <div class="abs-border"></div>
-                    <div class="fig-contacts">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <h4 class="name">Hossam Ibrahim</h4>
-                <p class="position">CAT Founder</p>
+            <h4 class="name">Mariam Essa</h4>
+            <p class="position">CAT Founder</p>
+          </div>
+          <div class="b-member">
+            <div class="fig-img">
+              <img src="imgs/triago.png" alt="" />
+              <div class="abs-border"></div>
+              <div class="fig-contacts">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
             </div>
-            <div class="b-member">
-                <div class="fig-img">
-                    <img src="imgs/triago.png" alt="">
-                    <div class="abs-border"></div>
-                    <div class="fig-contacts">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <h4 class="name">Hossam Hagag</h4>
-                <p class="position">CAT Founder</p>
+            <h4 class="name">Hossam Ibrahim</h4>
+            <p class="position">CAT Founder</p>
+          </div>
+          <div class="b-member">
+            <div class="fig-img">
+              <img src="imgs/triago.png" alt="" />
+              <div class="abs-border"></div>
+              <div class="fig-contacts">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
             </div>
-            <div class="b-member">
-                <div class="fig-img">
-                    <img src="imgs/triago.png" alt="">
-                    <div class="abs-border"></div>
-                    <div class="fig-contacts">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <h4 class="name">Mostafa Helal</h4>
-                <p class="position">CAT Founder</p>
+            <h4 class="name">Hossam Hagag</h4>
+            <p class="position">CAT Founder</p>
+          </div>
+          <div class="b-member">
+            <div class="fig-img">
+              <img src="imgs/triago.png" alt="" />
+              <div class="abs-border"></div>
+              <div class="fig-contacts">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
             </div>
-            <div class="b-member">
-                <div class="fig-img">
-                    <img src="imgs/triago.png" alt="">
-                    <div class="abs-border"></div>
-                    <div class="fig-contacts">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <h4 class="name">Taher Mostafa</h4>
-                <p class="position">CAT Founder</p>
+            <h4 class="name">Mostafa Helal</h4>
+            <p class="position">CAT Founder</p>
+          </div>
+          <div class="b-member">
+            <div class="fig-img">
+              <img src="imgs/triago.png" alt="" />
+              <div class="abs-border"></div>
+              <div class="fig-contacts">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
             </div>
-            <div class="b-member">
-                <div class="fig-img">
-                    <img src="imgs/triago.png" alt="">
-                    <div class="abs-border"></div>
-                    <div class="fig-contacts">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <h4 class="name">Mohamed Abdelhakim</h4>
-                <p class="position">CAT Founder</p>
+            <h4 class="name">Taher Mostafa</h4>
+            <p class="position">CAT Founder</p>
+          </div>
+          <div class="b-member">
+            <div class="fig-img">
+              <img src="imgs/triago.png" alt="" />
+              <div class="abs-border"></div>
+              <div class="fig-contacts">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
             </div>
-            <div class="b-member">
-                <div class="fig-img">
-                    <img src="imgs/triago.png" alt="">
-                    <div class="abs-border"></div>
-                    <div class="fig-contacts">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <h4 class="name">Ahmed Attalla</h4>
-                <p class="position">CAT Founder</p>
+            <h4 class="name">Mohamed Abdelhakim</h4>
+            <p class="position">CAT Founder</p>
+          </div>
+          <div class="b-member">
+            <div class="fig-img">
+              <img src="imgs/triago.png" alt="" />
+              <div class="abs-border"></div>
+              <div class="fig-contacts">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
             </div>
-            <div class="b-member">
-                <div class="fig-img">
-                    <img src="imgs/triago.png" alt="">
-                    <div class="abs-border"></div>
-                    <div class="fig-contacts">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <h4 class="name">Ahmed Shehata</h4>
-                <p class="position">CAT Founder</p>
+            <h4 class="name">Ahmed Attalla</h4>
+            <p class="position">CAT Founder</p>
+          </div>
+          <div class="b-member">
+            <div class="fig-img">
+              <img src="imgs/triago.png" alt="" />
+              <div class="abs-border"></div>
+              <div class="fig-contacts">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
             </div>
-            <div class="b-member">
-                <div class="fig-img">
-                    <img src="imgs/triago.png" alt="">
-                    <div class="abs-border"></div>
-                    <div class="fig-contacts">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <h4 class="name">Eslam Elgendy</h4>
-                <p class="position">CAT Founder</p>
+            <h4 class="name">Ahmed Shehata</h4>
+            <p class="position">CAT Founder</p>
+          </div>
+          <div class="b-member">
+            <div class="fig-img">
+              <img src="imgs/triago.png" alt="" />
+              <div class="abs-border"></div>
+              <div class="fig-contacts">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
             </div>
-            <div class="b-member">
-                <div class="fig-img">
-                    <img src="imgs/triago.png" alt="">
-                    <div class="abs-border"></div>
-                    <div class="fig-contacts">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <h4 class="name">Ahmed El-sayed</h4>
-                <p class="position">CAT Founder</p>
+            <h4 class="name">Eslam Elgendy</h4>
+            <p class="position">CAT Founder</p>
+          </div>
+          <div class="b-member">
+            <div class="fig-img">
+              <img src="imgs/triago.png" alt="" />
+              <div class="abs-border"></div>
+              <div class="fig-contacts">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
             </div>
-            <div class="b-member">
-                <div class="fig-img">
-                    <img src="imgs/triago.png" alt="">
-                    <div class="abs-border"></div>
-                    <div class="fig-contacts">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <h4 class="name">Samuel El-Derdery</h4>
-                <p class="position">CAT Founder</p>
+            <h4 class="name">Ahmed El-sayed</h4>
+            <p class="position">CAT Founder</p>
+          </div>
+          <div class="b-member">
+            <div class="fig-img">
+              <img src="imgs/triago.png" alt="" />
+              <div class="abs-border"></div>
+              <div class="fig-contacts">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
             </div>
-            <div class="b-member">
-                <div class="fig-img">
-                    <img src="imgs/triago.png" alt="">
-                    <div class="abs-border"></div>
-                    <div class="fig-contacts">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <h4 class="name">Omar Kassem</h4>
-                <p class="position">CAT Founder</p>
+            <h4 class="name">Samuel El-Derdery</h4>
+            <p class="position">CAT Founder</p>
+          </div>
+          <div class="b-member">
+            <div class="fig-img">
+              <img src="imgs/triago.png" alt="" />
+              <div class="abs-border"></div>
+              <div class="fig-contacts">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
             </div>
+            <h4 class="name">Omar Kassem</h4>
+            <p class="position">CAT Founder</p>
+          </div>
         </section>
+      </div>
     </section>
-        <footer>
-            <section class="footer1">
-                <section class="info">
-                    <img src="imgs/logo-nav.svg" alt="">
-                    <p class="info-location">
-                        <span>
-                            <img src="imgs/location-pin-red.svg" alt="">
-                        </span>
-                        Faculty of Engineering,<br> Mansoura University,<br> Dakhliya, Egypt
-                    </p>
-                    <div class="contact-us">
-                        <a href="https://web.facebook.com/CATReloaded">
-                            <img src="imgs/facebook-f-brands.svg" alt="">
-                        </a>
-                        <a href="https://twitter.com/CATReloaded">
-                            <img src="imgs/twitter-brands.svg" alt="">
-                        </a>
-                        <a href="https://www.youtube.com/user/C4TReloaded">
-                            <img src="imgs/youtube-brands.svg" alt="">
-                        </a>
-                        <a href="https://github.com/CATReloaded">
-                            <img src="imgs/github-brands.svg" alt="">
-                        </a>
-                        <a href="https://www.linkedin.com/company/cat-reloaded/">
-                            <img src="imgs/linkedin-in-brands.svg" alt="">
-                        </a>
-                    </div>
-        
-                </section>
-                <section class="news-letter">
-                    <p>NEWSLETTER</p>
-                    <form>
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
-                        <input type="submit" value="Subscribe">
-                    </form>
-                </section>
-                <section class="blog-tags">
-                    <p>BLOG TAGS</p>
-                    <p>#Web_development</p>
-                    <p>#Web_Front-End</p>
-                    <p>#Data_Science</p>
-                    <p>#Cyper_security</p>
-                </section>
-                <section class="annual-partner">
-                    <p>ANNUAL PARTENER</p>
-                    <img src="imgs/triago.png" alt="" width="155px" height="155px">
-                </section>
-            </section>
-            <section class="footer2">
-                <p>
-                    Copywrite&copy; 2021 All Right Reserved by CATReloaded Technical
-                </p>
-            </section>
-        
-        </footer>
-        <script src="jsCode/about.js"></script>
-</body>
+    <footer>
+      <div class="container">
+        <section class="footer1">
+          <section class="info">
+            <img src="imgs/logo-nav.svg" alt="" />
+          </section>
+          <section class="news-letter">
+            <p class="info-location">
+              <span>
+                <img src="imgs/location-pin-red.svg" alt="" />
+              </span>
+              LOCATION
+            </p>
+            <p class="adrees">
+              Faculty of Engineering,<br />Mansoura University,<br />Dakhliya, Egypt
+            </p>
+          </section>
+          <section class="annual-partner">
+            <p>ANNUAL PARTENER</p>
+            <div class="partner">
+              <img src="imgs/triago.png" alt="" width="50px" height="50px" />
+              <img src="imgs/triago.png" alt="" width="50px" height="50px" />
+            </div>
+          </section>
+          <section class="blog-tags">
+            <p>FOLLOW US</p>
+            <div class="contact-us">
+              <a href="https://web.facebook.com/CATReloaded">
+                <img src="imgs/facebook-f-brands.svg" alt="" />
+              </a>
+              <a href="https://twitter.com/CATReloaded">
+                <img src="imgs/twitter-brands.svg" alt="" />
+              </a>
+              <a href="https://www.youtube.com/user/C4TReloaded">
+                <img src="imgs/youtube-brands.svg" alt="" />
+              </a>
+              <a href="https://github.com/CATReloaded">
+                <img src="imgs/github-brands.svg" alt="" />
+              </a>
+              <a href="https://www.linkedin.com/company/cat-reloaded/">
+                <img src="imgs/linkedin-in-brands.svg" alt="" />
+              </a>
+            </div>
+          </section>
+        </section>
+      </div>
+      <section class="footer2">
+        <p>Copywrite&copy; 2021 All Right Reserved by CATReloaded Technical</p>
+      </section>
+    </footer>
+    <script src="jsCode/about.js"></script>
+  </body>
 </html>
