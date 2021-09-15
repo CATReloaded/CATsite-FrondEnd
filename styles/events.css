@@ -254,11 +254,11 @@ nav > .container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 664px;
+  width: 740px;
   height: 24px;
   justify-content: space-between;
   color: #fff;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: 500;
 }
 .nav-bar > ul > li {
@@ -541,4 +541,7 @@ footer {
   width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
+}
+.activee {
+  color: #c2341c;
 }
