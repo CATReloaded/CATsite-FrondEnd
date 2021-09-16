@@ -117,7 +117,7 @@ nextBtns.forEach((btn) => {
 const myNav = document.querySelector('nav');
 window.onscroll = function () { 
     "use strict";
-    if (window.scrollY >= 500) {
+    if (window.scrollY >= 300) {
         myNav.classList.add('navStyleScroll');
         console.log('we are Down')
     } 
