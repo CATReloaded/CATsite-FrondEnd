@@ -786,6 +786,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 12px 0;
 }
 .footer2 > p {
   font-size: 12px;
@@ -1163,7 +1164,7 @@ footer {
   .nav-bar {
     order: 0;
     position: absolute;
-    top: 41px;
+    top: 42px;
     left: 132px;
     background-color: #222223;
     width: 0;
@@ -1181,7 +1182,7 @@ footer {
     height: unset;
     align-items: flex-start;
     padding: 0 8px;
-    transition: all 0.75s ease-in-out;
+    transition: all 0.27s ease-in-out;
     transform: translateX(-700px);
   }
   .logo-header {
@@ -1231,12 +1232,12 @@ footer {
     margin-bottom: 0;
   }
   .blog-tags > p {
-    transform: translateY(-2px);
+    transform: translateY(0px);
     text-align: unset;
     margin-bottom: 0;
   }
   .contact-us {
-    transform: translateY(-6px);
+    transform: translateY(-2px);
   }
 }
 .arrow-down {
