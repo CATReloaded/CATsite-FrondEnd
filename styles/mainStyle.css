@@ -12,22 +12,18 @@ body {
 }
 /*layover style*/
 .lay1 {
-  width: 100%;
+  display: flex;
   z-index: 100;
   background-color: rgba(0, 0, 0, 1);
-  height: 100%;
-  display: flex;
   justify-content: center;
   color: #fff;
   position: absolute;
-  display: none;
-  transform: translateX(-120%);
-  transform: translateY(-120%);
+  transform: translateY(-1200%);
   transition: all 0.25s ease-in-out;
+  left: 165px;
+  top: 100%;
 }
 .active-layover {
-  display: flex;
-  transform: translateX(0);
   transform: translateY(0);
   transition: all 0.25s ease-in-out;
 }
@@ -44,12 +40,12 @@ body {
   cursor: pointer;
 }
 .lay2 {
-  width: 1046px;
+  width: 870px;
   display: flex;
-  margin-top: 86px;
+  margin-top: 72px;
 }
 .lay2 > .NL-img > img {
-  width: 520px;
+  width: 432px;
 }
 .lay2 > .NL-sub {
   display: flex;
@@ -57,34 +53,34 @@ body {
   margin-left: -8px;
 }
 .lay2 > .NL-sub > h4 {
-  font-size: 50px;
+  font-size: 40px;
   /* line-height: 42px; */
 }
 .lay2 > .NL-sub > p {
-  font-size: 26px;
-  margin-bottom: 28px;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 .NL-sub > form {
   display: flex;
   flex-direction: column;
 }
 .NL-sub > form > * {
-  width: 448px;
-  height: 50px;
+  width: 372px;
+  height: 40px;
   color: #484848;
   padding: 8px 16px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   border-radius: 6px;
 }
 .NL-sub > form > input::placeholder {
-  font-size: 20px;
+  font-size: 16px;
   color: #484848;
 }
 .NL-sub > form > input[type="submit"] {
   background-color: #c2341c;
   border: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
 }
 /*................................................
 .............................
@@ -131,6 +127,7 @@ nav > .container {
   width: 1200px;
   margin: 0 auto;
   padding: 10px;
+  position: relative;
 }
 
 .logo > img {

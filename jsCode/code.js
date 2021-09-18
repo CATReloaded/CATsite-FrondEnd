@@ -68,10 +68,12 @@ indicatorsEvent.forEach((ind, i) => {
 
 //hadling newsletter
 subToNews.addEventListener('click', function () {
-    layover.classList.add('active-layover');
+    layover.classList.toggle('active-layover');
+    
 });
 exit.addEventListener('click', function () {
     layover.classList.remove('active-layover');
+
 });
 
 // handling modal
