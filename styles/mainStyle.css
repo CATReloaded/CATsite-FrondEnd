@@ -54,7 +54,6 @@ body {
 }
 .lay2 > .NL-sub > h4 {
   font-size: 40px;
-  /* line-height: 42px; */
 }
 .lay2 > .NL-sub > p {
   font-size: 20px;
@@ -865,6 +864,35 @@ footer {
   .container {
     width: 700px;
   }
+  .lay1 {
+    left: 104px;
+  }
+  .lay1 > .exit {
+    right: 8px;
+    top: 8px;
+  }
+  .lay2 {
+    width: 484px;
+    margin-top: 40px;
+  }
+  .lay2 > .NL-img > img {
+    width: 240px;
+  }
+  .lay2 > .NL-sub > h4 {
+    font-size: 20px;
+  }
+  .lay2 > .NL-sub > p {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .NL-sub > form > * {
+    width: 208px;
+    height: 28px;
+  }
+  .NL-sub > form > input::placeholder,
+  .NL-sub > form > input[type="submit"] {
+    font-size: 10px;
+  }
   /*header & Nav style*/
   nav > .container {
     width: 700px;
@@ -1118,6 +1146,16 @@ footer {
   .container {
     width: 350px;
   }
+  .lay1 {
+    left: 42px;
+  }
+  .lay2 {
+    width: 300px;
+    margin-top: 20px;
+  }
+  .lay2 > .NL-sub {
+    margin-left: -228px;
+  }
   .menu-button {
     display: block;
     padding: 6px 8px;
@@ -1172,6 +1210,7 @@ footer {
     border-radius: 6px;
     padding-bottom: 8px;
     padding-top: 16px;
+    z-index: 1000;
   }
   .nav-bar > ul {
     flex-direction: column;
