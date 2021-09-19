@@ -5,23 +5,20 @@
   box-sizing: border-box;
 }
 /*layover style*/
+/*layover style*/
 .lay1 {
-  width: 100%;
+  display: flex;
   z-index: 100;
   background-color: rgba(0, 0, 0, 1);
-  height: 100%;
-  display: flex;
   justify-content: center;
   color: #fff;
   position: absolute;
-  display: none;
-  transform: translateX(-120%);
-  transform: translateY(-120%);
+  transform: translateY(-1200%);
   transition: all 0.25s ease-in-out;
+  left: 165px;
+  top: 100%;
 }
 .active-layover {
-  display: flex;
-  transform: translateX(0);
   transform: translateY(0);
   transition: all 0.25s ease-in-out;
 }
@@ -38,12 +35,12 @@
   cursor: pointer;
 }
 .lay2 {
-  width: 1046px;
+  width: 870px;
   display: flex;
-  margin-top: 86px;
+  margin-top: 72px;
 }
 .lay2 > .NL-img > img {
-  width: 520px;
+  width: 432px;
 }
 .lay2 > .NL-sub {
   display: flex;
@@ -51,35 +48,38 @@
   margin-left: -8px;
 }
 .lay2 > .NL-sub > h4 {
-  font-size: 50px;
-  /* line-height: 42px; */
+  font-size: 40px;
 }
 .lay2 > .NL-sub > p {
-  font-size: 26px;
-  margin-bottom: 28px;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 .NL-sub > form {
   display: flex;
   flex-direction: column;
 }
 .NL-sub > form > * {
-  width: 448px;
-  height: 50px;
+  width: 372px;
+  height: 40px;
   color: #484848;
   padding: 8px 16px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   border-radius: 6px;
 }
 .NL-sub > form > input::placeholder {
-  font-size: 20px;
+  font-size: 16px;
   color: #484848;
 }
 .NL-sub > form > input[type="submit"] {
   background-color: #c2341c;
   border: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
 }
+/*................................................
+.............................
+
+*/
 /* modal style */
 
 .register > button {
@@ -243,6 +243,7 @@ nav > .container {
   width: 1200px;
   margin: 0 auto;
   padding: 10px;
+  position: relative;
 }
 
 .logo > img {
@@ -302,7 +303,7 @@ nav > .container {
   display: none;
 }
 /* ---------- */
-
+/* every event */
 .event {
   margin-bottom: 24px;
   display: flex;
@@ -376,17 +377,17 @@ nav > .container {
   color: #fff;
   background-color: rgb(194, 52, 28);
 }
-
+/*parent events */
 .events {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 90px;
+  margin: 92px;
 }
 
 .events .event {
-  margin: 15px;
+  margin: 16px;
 }
 
 .slider-container .events {
@@ -403,7 +404,7 @@ nav > .container {
   justify-content: center;
   align-items: center;
   margin-top: -60px;
-  margin-bottom: 45px;
+  margin-bottom: 44px;
 }
 
 .slider-controls .prev,
@@ -414,7 +415,7 @@ nav > .container {
   text-align: center;
   cursor: pointer;
   border-radius: 4px;
-  padding: 15px;
+  padding: 16px;
   user-select: none;
 }
 
@@ -445,7 +446,7 @@ nav > .container {
   background-color: rgb(194, 52, 28);
   color: #fff;
 }
-
+/* footer */
 footer {
   background-color: #1c1c1c;
   display: flex;
@@ -544,4 +545,304 @@ footer {
 }
 .activee {
   color: #c2341c;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 700px;
+  }
+  .lay1 {
+    left: 104px;
+  }
+  .lay1 > .exit {
+    right: 8px;
+    top: 8px;
+  }
+  .lay2 {
+    width: 484px;
+    margin-top: 40px;
+  }
+  .lay2 > .NL-img > img {
+    width: 240px;
+  }
+  .lay2 > .NL-sub > h4 {
+    font-size: 20px;
+  }
+  .lay2 > .NL-sub > p {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .NL-sub > form > * {
+    width: 208px;
+    height: 28px;
+  }
+  .NL-sub > form > input::placeholder,
+  .NL-sub > form > input[type="submit"] {
+    font-size: 10px;
+  }
+  /*header & Nav style*/
+  nav > .container {
+    width: 700px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .nav-bar {
+    order: 2;
+  }
+  .nav-bar > ul {
+    width: 675px;
+    font-size: 16px;
+    justify-content: center;
+    gap: 0 20px;
+  }
+  header {
+    margin-top: -80px;
+  }
+  .logo-header > img {
+    height: 132px;
+  }
+  .aboutCat > img {
+    width: 76px;
+  }
+  .aboutCat > h1 {
+    font-size: 32px;
+  }
+  /*footer*/
+  /*...........................
+  ...................
+  ..............
+  */
+  .footer1 {
+    margin-top: 20px;
+  }
+  .footer2 {
+    padding: 12px;
+    height: unset;
+  }
+  .footer2 > p {
+    font-size: 12px;
+  }
+  .info > * {
+    margin-bottom: 14px;
+  }
+  .info > img {
+    width: 110px;
+  }
+  .info-location img {
+    width: 10px;
+  }
+  .contact-us > * {
+    margin-right: 8px;
+  }
+  .contact-us > a > img {
+    height: 10px;
+  }
+  .news-letter > p,
+  .annual-partner > p {
+    margin-bottom: 4px;
+    font-size: 12px;
+  }
+  .news-letter > .adrees {
+    font-size: 10px;
+  }
+  .blog-tags > p {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+  .annual-partner img {
+    margin-left: 10px;
+    width: 28px;
+    height: 28px;
+  }
+  /*every event */
+  .events-slider-parent {
+    width: 560px;
+  }
+  .event {
+    width: 560px;
+  }
+  .event > .event-img {
+    margin: 6px 0 6px 6px;
+  }
+  .event > .event-img > img {
+    width: 212px;
+    height: 160px;
+  }
+  .event > .event-description {
+    margin-top: 6px;
+    margin-left: 16px;
+    margin-right: 36px;
+  }
+  .event > .event-description > h3 {
+    font-size: 18px;
+  }
+  .event > .event-description > .add-data {
+    font-size: 10px;
+  }
+  .event-date {
+    margin-top: 6px;
+  }
+  .event-date > img,
+  .event-location > img {
+    width: 10px;
+    height: 10px;
+  }
+  .event-date > span,
+  .event-location > span {
+    font-size: 6px;
+    margin-left: 4px;
+  }
+  .event-location {
+    margin-left: 20px;
+  }
+  .description {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .event-description > button {
+    font-size: 10px;
+    margin-bottom: 10px;
+    padding: 6px 10px;
+  }
+  /*............................
+  ..................
+  .............*/
+  /*parent events*/
+  .events {
+    margin: 52px;
+  }
+  .events .event {
+    margin: 10px;
+  }
+  .slider-controls {
+    margin-top: -32px;
+    margin-bottom: 24px;
+  }
+}
+.menu-button {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  nav {
+    background-color: #222223;
+  }
+
+  .container {
+    width: 350px;
+  }
+  .lay1 {
+    left: 42px;
+    top: 110%;
+  }
+  .lay2 {
+    width: 300px;
+    margin-top: 20px;
+  }
+  .lay2 > .NL-sub {
+    margin-left: -228px;
+  }
+  .menu-button {
+    display: block;
+    padding: 6px 8px;
+    width: 100px;
+    background-color: #222223;
+    border-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-button:hover + .nav-bar,
+  .menu-button:active + .nav-bar,
+  .nav-bar:hover {
+    display: block;
+    width: unset;
+    height: unset;
+    opacity: 1;
+  }
+  .menu-button:hover + .nav-bar > ul,
+  .menu-button:active + .nav-bar > ul,
+  .nav-bar:hover > ul {
+    transform: translateX(0);
+  }
+  nav > .container {
+    width: 350px;
+    position: relative;
+  }
+  .logo {
+    height: 32px;
+  }
+  .logo > img {
+    width: 96px;
+    height: 32px;
+  }
+  .news-letter > button {
+    font: 12px;
+    padding: 6px 8px;
+  }
+  .nav-bar {
+    order: 0;
+    position: absolute;
+    top: 42px;
+    left: 132px;
+    background-color: #222223;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+    overflow-x: none;
+    border-radius: 6px;
+    padding-bottom: 8px;
+    padding-top: 16px;
+    z-index: 1000;
+  }
+  .nav-bar > ul {
+    flex-direction: column;
+    width: unset;
+    height: unset;
+    align-items: flex-start;
+    padding: 0 8px;
+    transition: all 0.27s ease-in-out;
+    transform: translateX(-700px);
+  }
+  .footer1 {
+    flex-wrap: wrap;
+    gap: 4px 0;
+    margin-bottom: 8px;
+  }
+  .blog-tags {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: unset;
+    margin-bottom: 0;
+  }
+  .blog-tags > p {
+    transform: translateY(0px);
+    text-align: unset;
+    margin-bottom: 0;
+  }
+  .contact-us {
+    transform: translateY(-2px);
+  }
+  /*every event */
+  .events-slider-parent {
+    width: 320px;
+  }
+  .event {
+    flex-direction: column;
+    width: 320px;
+  }
+  .event > .event-img > img {
+    width: 300px;
+    height: unset;
+  }
+  /*event parents*/
+}
+.arrow-down {
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  transform: rotate(-135deg);
 }
