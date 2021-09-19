@@ -885,7 +885,7 @@ footer {
   }
   .footer2 {
     padding: 12px;
-    height: 14px;
+    height: unset;
   }
   .footer2 > p {
     font-size: 12px;
