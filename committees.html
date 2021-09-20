@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/commites.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="imgs/layer1.svg" />
     <title>CAT Committees</title>
   </head>
   <body>
@@ -22,7 +23,7 @@
             <li><a href="about.html">About</a></li>
             <li><a href="events.html">Events</a></li>
             <li><a href="https://blog.catreloaded.org/">CATazine</a></li>
-            <li class="activee"><a href="comiitees.html">Committees</a></li>
+            <li class="activee"><a href="committees.html">Committees</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
@@ -352,6 +353,28 @@
       const nonTechDes = document.querySelector(".non-techincal > .container  .circle-disecription");
       const techCir = document.querySelectorAll(".tech > .card");
       const techDes = document.querySelector(".tech > .circle-disecription");
+      //objects Data 
+      const cirs = {
+        PRFR:'responsible for team relations and the process of collecting financial contributions from Resources available to them, gathering supporters and targeting a broad base of individuals who believe in your vision.',
+        HR : 'HR, or Human Resources, is responsible for finding, screening, recruiting, and training applicants, and planning activities that help members work together and know each other better, or activities that help improve members’ skills further. As well as dealing with any internal problems that may arise between members',
+        Logistics : "The logistics committee is the front of the team primarily responsible for organizing any event inside and outside the team in line with the vision and mission of the team as a whole, as well as with the goal of the event, in order to make it appear in the best possible way.Communicate with all committees to know their needs and take them into account in the event plan.",
+        Media : 'Social media is one of the most important parts of any company or team, as it is the face of the team digitally. Through posts or videos you can learn a lot about the group and the content they intend to deliver. Social media has three main branches, content creation, graphics and video editing. A place where you can create things that you know people will enjoy.',
+        UIUXGraphic : ' Have you ever seen a picture and kept thinking, How was this design made?What is the idea of this design ? How much does he develop himself to reach this level ? This makes us know graphic design, which is a visual contact the graphic designer communicates certain ideas or messages in a visual way.These visuals can be as simple as a business logo, or as complex as page layouts, via programs like Photoshop, illustrator, XD that help him control images, fonts, colors, shapes and sizes.',
+        FrontEnd : 'The Front-End is one of the branches of Web development, which is divided into (Front-end & Back-end). It is also the User Interface which the user deals with when visiting a website.The front- end deals with the client - side of the website, unlike the back - end which deals with the server - side of the website.',
+        BackEnd : "After designing a page or an  application we only have a pic but we cannot move in the browser , sell ,buy or just login  so We need to use the backend It refers to parts of a computer application or a program's code that allow it to operate and that cannot be accessed by a user. The back end is also called the data access layer of software or hardware and includes any functionality that needs to be accessed and navigated to by digital means.",
+        GameDevelopment: "Game development isn't about writing code; it's about creating a piece of art that helps people enjoy their free time. A game developer could be a programmer, a digital artist, or maybe a gamer who enjoys video games so much that he decides to create his own games.If you are into game development, we are here to help you take the first steps and design your first video game, and make Easter eggs of your own.",
+        Android:' With over 3 billion Android devices among (Smartphones, TVs, Watches, Cars, and more) in the hands of 2.5 billion Android users, Android has become the most used operating system for smartphones so we will help you glide over this enormous world by learning how to make apps for the people inside.',
+        Flutter:'Let me tell you something,if you have a product,Why should you write 2 codebases for Android & IOS, ha? \n Use FLUTTER instead.Flutter is a free and open- source UI toolkit created by Google.It allows you to create fast, beautiful, natively compiled applications for mobile, web, and desktop with only one codebase.',
+        IOS:
+          "IOS is the operating system used on Apple products, such as the iPhone, iPad, and iPod touch.It is the world's second-most widely installed mobile operating system, after Android.",
+        Security:"Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. It's one of our technical circles that contains three branches: (Reverse, Network security, and Penetration testing).The reverse is the process of analyzing functions and information flow so that functionality and behavior can be understood.Network security aims at protecting a computer network from intruders, including both wired and wireless(Wi- Fi) connections.Penetration testing, also known as a pen test, is a simulated cyberattack against your computer system to check for exploitable vulnerabilities.",
+        ComputerScience : "The CS fundamentals are the first stair in CS stairs. It will help you to understand how the computer works, how to deal with data, how to deal with code and many other things you should know to go freely in your career. Whatever the CS technology you choose to learn, you need these fundamentals. Many people who decided to start directly learning one of CS technologies are suffering from a lack of some skills and information and they waste their time to go back and learn what they need and the process is repeated continuously.",
+        DataScience:
+          "Learning fundamentals of Math, Probability, and Statistics with a programming language like Python is the gate to knowing what Data Science is.From one level to another you will go deeper, branch out in more critical and essential topics and go more advanced in technologies in Machine Learning like Python with different libraries, SQL and DataBase, APIs, Tensorflow."
+
+      }
+
+
       //////////////////////////////////hadling events
       //// non tech circles
       nonTechCir.forEach(cir =>{
@@ -363,11 +386,7 @@
           let htmltext = `
           <h3 class="tech-ch">${cir.children[0].textContent} Circle</h3>
             <p>
-              Lorem Ipsum is simply dummy dolor unknown printer text of the
-              printing and typesetting dolor alore industry. Lorem Ipsum has been
-              the industry's standard dummy when an unknown printer. dolor cont
-              standard dummy Contrary to popular belief, standard dummy lorem
-              ipsum dolor.
+              ${cirs[cir.children[0].textContent.replace(/[^A-Za-z0-9]/g, '')]}
             </p>
           `;
           nonTechDes.innerHTML='';
@@ -385,11 +404,7 @@
           let htmltext = `
           <h3 class="tech-ch">${cir.children[0].textContent} Circle</h3>
             <p>
-              Lorem Ipsum is simply dummy dolor unknown printer text of the
-              printing and typesetting dolor alore industry. Lorem Ipsum has been
-              the industry's standard dummy when an unknown printer. dolor cont
-              standard dummy Contrary to popular belief, standard dummy lorem
-              ipsum dolor.
+              ${cirs[cir.children[0].textContent.replace(/[^A-Za-z0-9]/g, '')]}
             </p>
           `;
           techDes.innerHTML = '';
