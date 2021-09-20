@@ -787,7 +787,7 @@ footer {
     transform: translateX(-700px);
   }
   .cards {
-    gap: 12px;
+    gap: 30px 12px;
   }
   .circle-disecription > p {
     margin-right: 0;
