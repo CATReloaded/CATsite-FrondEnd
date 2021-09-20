@@ -209,10 +209,9 @@
         <div class="circle-disecription">
           <h3 class="ch">HR Circle</h3>
           <p>
-            Lorem Ipsum is simply dummy dolor unknown printer text of the printing
-            and typesetting dolor alore industry. Lorem Ipsum has been the
-            industry's standard dummy when an unknown printer. dolor cont standard
-            dummy Contrary to popular belief, standard dummy lorem ipsum dolor.
+            HR, or Human Resources, is responsible for finding, screening, recruiting, and training applicants, and planning
+            activities that help members work together and know each other better, or activities that help improve members’ skills
+            further. As well as dealing with any internal problems that may arise between members
           </p>
         </div>
       </div>
@@ -236,7 +235,7 @@
           <div class="card card3">
             <span> UI/UX & Graphic </span>
             <span>
-              <img src="imgs/front-end.svg" alt="" />
+              <img src="imgs/graphics.svg" alt="" />
             </span>
           </div>
           <div class="card card4">
@@ -254,13 +253,13 @@
           <div class="card card6">
             <span> Flutter </span>
             <span>
-              <img src="imgs/android.svg" alt="" />
+              <img src="imgs/flutter.svg" alt="" />
             </span>
           </div>
           <div class="card card7">
             <span> IOS </span>
             <span>
-              <img src="imgs/android.svg" alt="" />
+              <img src="imgs/IOS.svg" alt="" />
             </span>
           </div>
           <div class="card card8">
@@ -272,7 +271,7 @@
           <div class="card card9">
             <span> Computer Science </span>
             <span>
-              <img src="imgs/android.svg" alt="" />
+              <img src="imgs/computer Science.svg" alt="" />
             </span>
           </div>
           <div class="card card10">
@@ -348,38 +347,67 @@
     <script>
       ////////////////////////variables
       const nonTechCir = document.querySelectorAll(
-        ".non-techincal > .cards > .card"
+        ".non-techincal > .container >.cards > .card"
       );
+      const nonTechDes = document.querySelector(".non-techincal > .container  .circle-disecription");
       const techCir = document.querySelectorAll(".tech > .card");
-      const clicker = document.querySelector(".ch");
-      const techClicker = document.querySelector(".tech-ch");
       const techDes = document.querySelector(".tech > .circle-disecription");
       //////////////////////////////////hadling events
       //// non tech circles
-      clicker.addEventListener("click", function () {
-        nonTechCir.forEach((cir) => {
-          cir.classList.remove("active-circle");
-        });
-        const rnd = Math.trunc(Math.random() * 4);
-        nonTechCir[rnd].classList.add("active-circle");
-        clicker.textContent = `${nonTechCir[rnd].children[0].textContent} Circle`;
-      });
+      nonTechCir.forEach(cir =>{
+        cir.addEventListener('click',(e)=>{
+          nonTechCir.forEach((icir) => {
+            icir.classList.remove("active-circle");
+          });
+          cir.classList.add('active-circle')
+          let htmltext = `
+          <h3 class="tech-ch">${cir.children[0].textContent} Circle</h3>
+            <p>
+              Lorem Ipsum is simply dummy dolor unknown printer text of the
+              printing and typesetting dolor alore industry. Lorem Ipsum has been
+              the industry's standard dummy when an unknown printer. dolor cont
+              standard dummy Contrary to popular belief, standard dummy lorem
+              ipsum dolor.
+            </p>
+          `;
+          nonTechDes.innerHTML='';
+          nonTechDes.innerHTML = htmltext;
+
+        })
+      })
       //////tech circles
-      techClicker.addEventListener("click", function () {
-        techCir.forEach((cir) => {
-          cir.classList.remove("active-circle");
-        });
-        const rnd = Math.trunc(Math.random() * 10);
-        techCir[rnd].classList.add("active-circle");
-        techClicker.textContent = `${techCir[rnd].children[0].textContent} Circle`;
-        techDes.style.order = Math.ceil((rnd + 1) / 4) * 4 || 4;
-        console.log(techDes.style.order);
+      techCir.forEach((cir , i) =>{
+        cir.addEventListener('click',()=>{
+          techCir.forEach((icir) => {
+            icir.classList.remove("active-circle");
+          });
+          cir.classList.add("active-circle");
+          let htmltext = `
+          <h3 class="tech-ch">${cir.children[0].textContent} Circle</h3>
+            <p>
+              Lorem Ipsum is simply dummy dolor unknown printer text of the
+              printing and typesetting dolor alore industry. Lorem Ipsum has been
+              the industry's standard dummy when an unknown printer. dolor cont
+              standard dummy Contrary to popular belief, standard dummy lorem
+              ipsum dolor.
+            </p>
+          `;
+          techDes.innerHTML = '';
+          techDes.innerHTML= htmltext;
+          techDes.style.display = 'block'
+          if(window.innerWidth >= 700){
+            techDes.style.order = Math.ceil((i + 1) / 4) * 4 || 4;
+          }
+          else{
+            techDes.style.order = Math.ceil((i + 1) / 2) * 2 || 2;
+          }
+        })
       });
       // handling modal
 
-      const registerBtn = document.querySelector(".btn-register");
-      const bgModal = document.querySelector(".bg-modal");
-      const closeBtns = Array.from(document.querySelectorAll(".close-btn"));
+      //const registerBtn = document.querySelector(".btn-register");
+      //const bgModal = document.querySelector(".bg-modal");
+      //const closeBtns = Array.from(document.querySelectorAll(".close-btn"));
 
       registerBtn.addEventListener("click", () => {
         bgModal.classList.add("open");
@@ -391,9 +419,9 @@
         });
       });
 
-      const nextBtns = Array.from(document.querySelectorAll(".nxt-btn"));
-      const submitBtn = document.querySelector(".submit-btn");
-      const modals = Array.from(document.querySelectorAll(".modal"));
+      //const nextBtns = Array.from(document.querySelectorAll(".nxt-btn"));
+      //const submitBtn = document.querySelector(".submit-btn");
+      //const modals = Array.from(document.querySelectorAll(".modal"));
 
       submitBtn.addEventListener("click", (e) => {
         e.preventDefault();
