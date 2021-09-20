@@ -10,6 +10,7 @@ const sliderParentEvent = document.querySelector('.events-slider-parent');
 const indicatorsEvent = document.querySelectorAll('.indicator-event');
 const eventSliderWidth = sliderParentEvent.offsetWidth;
 let NumOfEventSlide = 0;
+const events = document.querySelectorAll('.event');
 //.......................news letter layover
 const subToNews = document.querySelector('.btn-newsletter');
 const exit = document.querySelector('.exit');
@@ -128,3 +129,45 @@ window.onscroll = function () {
         console.log('stillUp')
     }
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////trying somthing
+let pressedMouse = false;
+let space = 0;
+// events.forEach((eve, i) => {
+//     eve.addEventListener('mousedown', (e) => {
+//         console.log(e);
+//         pressedMouse = true;
+//         space = e.clientX;
+//         eve.addEventListener('mousemove', (e) => {
+//             if (pressedMouse) {
+//                 console.log(e.clientX - space);
+//                 if (e.clientX - space < -50 && e.clientX - space > -52) {
+//                     console.log('working');
+//                     NumOfEventSlide < 2 && NumOfEventSlide >= 0 ? NumOfEventSlide++ : null;
+//                     handlingScrollingEvent(NumOfEventSlide);
+//                 }
+//             }
+//         })
+//     });
+//     eve.addEventListener('mouseup', () => {
+//         pressedMouse = false;
+//     })
+// });
+
+events.forEach((eve, i) => {
+    eve.addEventListener('touchend', (e) => {
+        console.log(e);
+    })
+})
