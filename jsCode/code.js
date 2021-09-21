@@ -168,6 +168,6 @@ let space = 0;
 
 events.forEach((eve, i) => {
     eve.addEventListener('touchend', (e) => {
-        console.log(e);
+        console.log(e.changedTouches);
     })
 })
