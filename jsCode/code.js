@@ -168,6 +168,9 @@ let space = 0;
 
 events.forEach((eve, i) => {
     eve.addEventListener('touchend', (e) => {
-        console.log(e.changedTouches);
+        console.log(e.timeStamp);
+    })
+    eve.addEventListener('touchstart', (e) => {
+        console.log(e.timeStamp);
     })
 })
