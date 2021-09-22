@@ -18,27 +18,33 @@ const layover = document.querySelector('.lay1');
 //.....................functions
 //........ project slider functions
 const handlingScrollingProject = function (i) {
-    indicatorsProjects[NumOfProjectSlide].classList.toggle('active');
-    NumOfProjectSlide = i;
-    indicatorsProjects[NumOfProjectSlide].classList.toggle('active');
+    indicatorsProjects.forEach(ind => {
+        ind.classList.remove('active');
+    })
+    indicatorsProjects[i].classList.toggle('active');
     sliderParentProjects.scrollTo({
-        left: NumOfProjectSlide * projectsSliderWidth,
+        left: i * projectsSliderWidth,
         behavior: 'smooth'
     })
 }
 
 //.....events slider function 
 const handlingScrollingEvent = function (i) {
-    indicatorsEvent[NumOfEventSlide].classList.toggle('active');
-    NumOfEventSlide = i;
-    indicatorsEvent[NumOfEventSlide].classList.toggle('active');
+    indicatorsEvent.forEach(ind => {
+        ind.classList.remove('active');
+    })
+    indicatorsEvent[i].classList.add('active');
     sliderParentEvent.scrollTo({
-        left: NumOfEventSlide * eventSliderWidth,
+        left: i * eventSliderWidth,
         behavior: 'smooth'
     })
 }
-
-
+// MAYBEEEEEEEEEEEEEEEEEEEEEEEE IMPORTANT!!!!!!!!!!!!!!!⬇⬇⬆⬆⬆⬆⬅⬅⬅
+// if you want create a one function to handle all slider on the home page 
+// here is how to do it 
+// it will be function with 3 arguments(indexOfCurrentSlide,indicatorsOfCurrentSlider,sliderParentOfCurrentSlider)
+// and instead of doing things manually in each function you will use one function to handle them all
+// hope that i helped
 
 
 //............hading events
@@ -79,7 +85,7 @@ exit.addEventListener('click', function () {
 
 // handling modal
 
-const registerBtn = document.querySelector('.btn-register')
+/*const registerBtn = document.querySelector('.btn-register')
 const bgModal = document.querySelector('.bg-modal')
 const closeBtns = Array.from(document.querySelectorAll('.close-btn'))
 
@@ -115,7 +121,7 @@ nextBtns.forEach((btn) => {
         }
     })
 })
-
+*/
 /////////////
 const myNav = document.querySelector('nav');
 window.onscroll = function () { 
@@ -143,7 +149,7 @@ window.onscroll = function () {
 
 
 ///////////////trying somthing
-let pressedMouse = false;
+/*let pressedMouse = false;
 let space = 0;
 // events.forEach((eve, i) => {
 //     eve.addEventListener('mousedown', (e) => {
@@ -173,4 +179,28 @@ events.forEach((eve, i) => {
     eve.addEventListener('touchstart', (e) => {
         console.log(e.timeStamp);
     })
-})
+})*/
+//didn't work⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆
+
+
+
+
+
+
+
+
+
+// handling intervals
+setInterval(() => {
+    NumOfEventSlide >= 0 && NumOfEventSlide < 2 ? NumOfEventSlide++
+        : NumOfEventSlide == 2 ? NumOfEventSlide = 0
+            : null;
+    handlingScrollingEvent(NumOfEventSlide);
+}, 3000);
+
+setInterval(() => {
+    NumOfProjectSlide >= 0 && NumOfProjectSlide < 1 ? NumOfProjectSlide++
+        : NumOfProjectSlide == 1 ? NumOfProjectSlide = 0
+        : null;
+    handlingScrollingProject(NumOfProjectSlide);
+},3000)
