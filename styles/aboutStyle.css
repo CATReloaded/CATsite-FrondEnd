@@ -277,7 +277,7 @@ nav > .container {
   color: rgba(194, 52, 28, 1);
   cursor: pointer;
 }
-.news-letter > button {
+.btn-newsletter {
   background-image: linear-gradient(180deg, #08070759, #b11212d1);
   box-shadow: none;
   border: 2px solid #fff;
@@ -285,7 +285,20 @@ nav > .container {
   color: #fff;
   padding: 8px 16px;
   cursor: pointer;
+  margin-left: 100px;
+  position: absolute;
+  right: 12px;
+  top: 12px;
 }
+/* .news-letter > button {
+  background-image: linear-gradient(180deg, #08070759, #b11212d1);
+  box-shadow: none;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  color: #fff;
+  padding: 8px 16px;
+  cursor: pointer;
+} */
 .aboutCat {
   margin-top: 96px;
   text-align: center;
@@ -936,6 +949,20 @@ footer {
   display: none;
 }
 @media screen and (max-width: 700px) {
+  .btn-newsletter {
+    position: initial;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+  }
+  .btn-newsletter:hover {
+    color: rgba(194, 52, 28, 1);
+    cursor: pointer;
+  }
   nav {
     background-color: #222223;
   }
@@ -965,6 +992,7 @@ footer {
     color: #fff;
     display: flex;
     justify-content: space-between;
+    margin-left: 100px;
   }
   .menu-button:hover + .nav-bar,
   .menu-button:active + .nav-bar,
@@ -998,7 +1026,7 @@ footer {
     order: 0;
     position: absolute;
     top: 42px;
-    left: 132px;
+    left: 224px;
     background-color: #222223;
     width: 0;
     height: 0;
