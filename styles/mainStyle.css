@@ -75,7 +75,7 @@ body {
   font-size: 16px;
   color: #484848;
 }
-.NL-sub > form > input[type="submit"] {
+.NL-sub > form > .submittt {
   background-color: #c2341c;
   border: none;
   color: #fff;
